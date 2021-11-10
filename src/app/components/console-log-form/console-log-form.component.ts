@@ -15,9 +15,11 @@ export class ConsoleLogFormComponent implements OnInit {
   }
 
   handleSubmit() {
-    console.log(`${this.firstInput} ${this.secondInput}`);
-    this.firstInput = ""
-    this.secondInput = ""
+    if(this.firstInput.length !== 0) {
+      console.log(`${this.firstInput} ${this.secondInput}`);
+      this.firstInput = ""
+      this.secondInput = ""
+    }
   }
 
 }

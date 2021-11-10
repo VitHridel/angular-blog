@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ConsoleLogFormComponent } from './components/console-log-form/console-log-form.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConsoleLogFormComponent
+    ConsoleLogFormComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
