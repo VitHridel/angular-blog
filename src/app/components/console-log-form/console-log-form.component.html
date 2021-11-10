@@ -1,0 +1,14 @@
+<div class="position-sticky" style="top: 2rem;">
+    <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="fst-italic">Console log Form</h4>
+        <form (submit)="handleSubmit()" class="mt-4 row justify-content-center">
+            <div class="mb-3 col-8">
+                <input type="text" class="form-control" name="firstInput" [(ngModel)]="firstInput" autocomplete="off">
+            </div>
+            <div class="mb-3 col-8">
+                <input type="text" class="form-control" name="secondInput" [(ngModel)]="secondInput" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-dark col-6">Show in the console</button>
+        </form>
+    </div>
+</div>
